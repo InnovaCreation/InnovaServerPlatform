@@ -1,0 +1,11 @@
+name: PlatformInnova
+main: cn.qionouu.innova.Platform.Platform
+version: 0.1
+
+author: bobcao3
+commands:
+  PullWL:
+    description: This will pull White List from server
+    usage: /PullWL
+    permission: PlatformInnova.basic
+    permission-message: You can't access PlatformInnova
