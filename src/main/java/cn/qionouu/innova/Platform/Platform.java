@@ -10,11 +10,13 @@ public final class Platform extends JavaPlugin {
   public void onEnable() {
     getLogger().info("Innova Platform Init");
     WL.father = this;
+    WL.startUpdateThread();
   }
 
   @Override
   public void onDisable() {
     getLogger().info("Innova Platform disabled");
+    WL.endUpdateThread();
   }
 
   @Override
