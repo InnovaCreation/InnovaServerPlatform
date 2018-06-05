@@ -1,6 +1,5 @@
-package cn.qionouu.innova.Platform;
+package studio.innovacreation.dev.Platform;
 
-import org.bukkit.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.*;
 
