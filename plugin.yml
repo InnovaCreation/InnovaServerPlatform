@@ -10,10 +10,14 @@ commands:
     permission: PlatformInnova.basic
     permission-message: You can't access PlatformInnova
 
-author: bobcao3
-commands:
   wb:
-    description: Open a workbench
+    description: Open a virtual workbench
     usage: /wb
     permission: PlatformInnova.virtual_wb
     permission-message: You can't access virtual workbench
+
+  enchantment:
+    description: Open a virtual enchantment table
+    usage: /enchantment
+    permission: PlatformInnova.virtual_enchantment
+    permission-message: You can't access virtual enchantment table
