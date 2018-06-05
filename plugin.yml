@@ -9,3 +9,11 @@ commands:
     usage: /PullWL
     permission: PlatformInnova.basic
     permission-message: You can't access PlatformInnova
+
+author: bobcao3
+commands:
+  wb:
+    description: Open a workbench
+    usage: /wb
+    permission: PlatformInnova.virtual_wb
+    permission-message: You can't access virtual workbench
