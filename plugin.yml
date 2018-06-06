@@ -21,3 +21,33 @@ commands:
     usage: /enchantment
     permission: PlatformInnova.virtual_enchantment
     permission-message: You can't access virtual enchantment table
+
+  createInstance:
+    description: Create a Console Script instance for the command sender
+    usage: /createInstance
+    permission: ConsoleSripts.createInstance
+    permission-message: You can't create an instance of Console Script
+
+  listInstance:
+    description: List Console Script instances for the command sender
+    usage: /listInstance
+    permission: ConsoleSripts.listInstance
+    permission-message: You can't list instances of the command sender
+
+  selectInstance:
+    description: Select an instance from the instance list as current
+    usage: /selectInstance [i]
+    permission: ConsoleSripts.selectInstance
+    permission-message: You can't select instances from the command sender
+
+  removeSelectedInstance:
+    description: Remove the selected instance from the instance list
+    usage: /removeSelectedInstance
+    permission: ConsoleSripts.removeSelectedInstance
+    permission-message: You can't remove instances from the command sender
+
+  eval:
+    description: Evaluate the script statement using selected instance of Console Script
+    usage: /eval "Statement"
+    permission: ConsoleScripts.eval
+    permission-message: You don't have the permission to evaluate scripts.

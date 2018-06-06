@@ -32,6 +32,7 @@ public final class Platform extends JavaPlugin implements Listener {
     public SQLiteLib sqlLib;
 
     private VirtualToolbox vToolBox;
+    private ConsoleScripts cScripts;
 
     @Override
     public void onEnable() {
@@ -44,9 +45,18 @@ public final class Platform extends JavaPlugin implements Listener {
 
         getServer().getPluginManager().registerEvents(this, this);
 
+        // Register Virtual Tool Box
         vToolBox = new VirtualToolbox(this);
         this.getCommand("wb").setExecutor(vToolBox);
         this.getCommand("enchantment").setExecutor(vToolBox);
+
+        // Register Console Scripts
+        cScripts = new ConsoleScripts(this);
+        this.getCommand("listInstance").setExecutor(cScripts);
+        this.getCommand("createInstance").setExecutor(cScripts);
+        this.getCommand("selectInstance").setExecutor(cScripts);
+        this.getCommand("removeSelectedInstance").setExecutor(cScripts);
+        this.getCommand("eval").setExecutor(cScripts);
     }
 
     @Override
